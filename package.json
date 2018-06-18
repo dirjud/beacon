@@ -1,0 +1,22 @@
+{
+  "name": "com.phonegap.helloworld",
+  "version": "1.0.0",
+  "displayName": "helloworld",
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-ble-central": {
+        "BLUETOOTH_USAGE_DESCRIPTION": "Brooksee Beacons"
+      }
+    }
+  },
+  "dependencies": {
+    "cordova": "^8.0.0",
+    "cordova-android": "~7.0.0",
+    "cordova-plugin-ble-central": "~1.2.2",
+    "cordova-plugin-whitelist": "1"
+  }
+}
