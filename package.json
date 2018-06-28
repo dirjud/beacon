@@ -13,9 +13,9 @@
   },
   "dependencies": {
     "cordova": "^8.0.0",
-    "cordova-android": "~7.0.0",
-    "cordova-plugin-ble-central": "file:../cordova-plugin-ble-central",
+    "cordova-android": "^7.0.0",
+    "cordova-plugin-ble-central": "^1.2.2",
     "cordova-plugin-compat": "^1.2.0",
-    "cordova-plugin-whitelist": "1"
+    "cordova-plugin-whitelist": "^1.3.3"
   }
 }
