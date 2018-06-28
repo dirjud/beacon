@@ -12,8 +12,11 @@
 <body>
   <div id="app">
     <h1>Devices</h1>
-    <ul>
-      <li v-for="ad in ads">{{ ad.id }} {{ ad.name }} {{ ad.date }} {{ad.rssi}}</li>
+    <ul style='list-style-type:none; margin:0; padding:0'>
+      <li v-for="ad in ads" style='border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; padding: 5px'>
+        <div style="">{{ ad.id }}</div>
+        <div style="margin-left: 20px">{{ JSON.stringify(ad) }}</div>
+      </li>
     </ul>
   </div>
   

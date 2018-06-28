@@ -14,7 +14,7 @@
   "dependencies": {
     "cordova": "^8.0.0",
     "cordova-android": "~7.0.0",
-    "cordova-plugin-ble-central": "git+https://github.com/dirjud/cordova-plugin-ble-central.git",
+    "cordova-plugin-ble-central": "file:../cordova-plugin-ble-central",
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-whitelist": "1"
   }

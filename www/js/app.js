@@ -12,6 +12,7 @@ document.addEventListener('deviceready', () => {
         function(ad) {
             ad.date = new Date();
             console.log(ad.id);
+            console.log(ad);
             Vue.set(app.ads, ad.id, ad);
             //app.ads.push(ad);
         },
@@ -93,8 +94,3 @@ function clean() {
 //    ],
 //  }
 //});
-//
-//
-//
-//
-
