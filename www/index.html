@@ -15,7 +15,9 @@
     <ul style='list-style-type:none; margin:0; padding:0'>
       <li v-for="ad in ads" style='border-top: 1px solid #aaa; border-bottom: 1px solid #aaa; padding: 5px'>
         <div style="">{{ ad.id }}</div>
-        <div style="margin-left: 20px">{{ JSON.stringify(ad) }}</div>
+        <div style="margin-left: 20px">
+          <div v-for="(v,k) in ad">{{ k }} : {{ pretty(k,v) }}</div>
+        </div>
       </li>
     </ul>
   </div>

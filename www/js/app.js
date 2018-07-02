@@ -2,6 +2,20 @@ var app = new Vue({
     el: "#app",
     data : {
         ads : {}
+    }, methods : {
+        pretty : function(k,v) {
+            if(v instanceof ArrayBuffer) {
+                var d = new Uint8Array(v);
+                var s = "" + d.length + ": [";
+                for(var idx=0; idx<d.length; idx++) {
+                    s = s + d[idx] + ",";
+                }
+                s = s + "]"
+                return s;
+            } else {
+                return (typeof v) + ": " + JSON.stringify(v);
+            }
+        }
     }
 });
 
@@ -35,6 +49,7 @@ function clean() {
         delete app.ads[del[idx]];
     }
 }
+
 
 //// Init F7 Vue Plugin
 //Vue.use(Framework7Vue)
